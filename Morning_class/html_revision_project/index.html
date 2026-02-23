@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Table</title>
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            width: 80%;
+            margin: 30px auto;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1{
+            text-align: center;
+            color: green;
+            font-size: 40px;
+        }
+
+        h2{
+            margin-top: 30px;
+            color: #333;
+        }
+
+        .sub-heading{
+            color: blue;
+        }
+
+        #main-para{
+            font-size: 18px;
+            color: gray;
+        }
+
+        nav{
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        nav a{
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            color: black;
+        }
+
+        nav a:hover{
+            color: red;
+        }
+
+        .box{
+            border: 2px solid black;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        ul, ol{
+            margin-left: 25px;
+        }
+
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th{
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even){
+            background-color: #f2f2f2;
+        }
+
+        tfoot td{
+            font-weight: bold;
+            background-color: #ddd;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Welcome To My Website</h1>
+
+    <p>My name is M.Ahmad. I am learning web development. This is my first project.</p>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://www.google.com" target="_blank">Google</a>
+    </nav>
+
+    <h2 class="sub-heading">Technologies I want to learn</h2>
+
+    <p id="main-para">This website is created as a revision project.</p>
+
+    <div class="box">
+        <h2 class="sub-heading">My Skills</h2>
+        <ul>
+            <li>Communication</li>
+            <li>Teamwork</li>
+            <li>HTML Basics</li>
+        </ul>
+    </div>
+
+    <p>I am learning <span style="color: red;">Web Development</span> at Corvit.</p>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+    </ul>
+
+    <h2>My Daily Routine</h2>
+    <ol>
+        <li>Wake up at 7:00 AM</li>
+        <li>Attend classes</li>
+        <li>Practice coding</li>
+        <li>Sleep</li>
+    </ol>
+
+    <h2>Pakistan Provinces & Cities</h2>
+
+    <ul>
+        <li>Punjab
+            <ol>
+                <li>Lahore</li>
+                <li>Faisalabad</li>
+                <li>Multan</li>
+            </ol>
+        </li>
+
+        <li>Sindh
+            <ol>
+                <li>Karachi</li>
+                <li>Hyderabad</li>
+                <li>Sukkur</li>
+            </ol>
+        </li>
+    </ul>
+
+    <h2>Definitions</h2>
+    <dl>
+        <dt><strong>HTML</strong></dt>
+        <dd>HyperText Markup Language</dd>
+        <dt><strong>CSS</strong></dt>
+        <dd>Cascading Style Sheets</dd>
+    </dl>
+
+    <h2>Students Marks Table</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Student Data</th>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Ali</td>
+                <td>20</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>Ahmed</td>
+                <td>21</td>
+                <td>88</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="2">Total Marks</td>
+                <td>173</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</div>
+
+
+</body>
+</html>
