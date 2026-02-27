@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 2</title>
+
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            form{
+                width: 90%;
+                height: auto;
+                margin: 50px auto;
+                border: 2px solid black;
+                padding: 20px;
+                border-radius: 10px;
+            }
+
+            form label{
+                font-size: 30px; 
+                margin-bottom: 10px;
+                margin-top: 20px;
+                display: block;
+            }
+
+          .inp:focus{
+                color: red;
+                text-shadow: 0 0 10px 5px red;
+            }
+
+            .inp:focus{
+                border: 2px solid black;
+                box-shadow: 0 0 10px 5px black;
+            }
+
+            
+
+            form input, form textarea{
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 20px;
+                border: 1px solid black;
+                border-radius: 5px;
+            }
+
+            textarea:focus{
+                border: 2px solid black;
+                box-shadow: 0 0 10px 5px rgb(235, 12, 12);
+            }
+
+            form button{
+                width: 100%;
+                padding: 10px 20px;
+                background-color: none;
+                color: black;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            button:hover{
+                background-color: black;
+                color: white;
+                box-shadow: 0 0 10px 5px rgb(241, 9, 9);
+            }
+        </style>
+
+</head>
+<body>
+    <form>
+        <label for="name">Name:</label>
+        <input  class="inp" type="text" placeholder="Enter your Name:" required minlength="3" maxlength="20" id="name">
+
+        <label for="email">Email:</label>
+        <input  class="inp" type="email" placeholder="Enter your Email:" required id="email">
+
+        <label for="password">Password:</label>
+        <input  class="inp" type="password" placeholder="Enter your Password:" required minlength="8" id="password">
+
+        <div class="gender">
+            <label for="gender">Gender:</label>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female">
+            <label for="other">rather not to say</label>
+            <input type="radio" name="gender" id="other">
+
+        </div>
+
+        <label for="query">Query:</label>
+        <textarea class="inp" id="query" placeholder="Enter your query here..."></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
