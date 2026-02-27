@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Admission Form</title>
+</head>
+<body>
+    <h1>Student Admission Form</h1>
+    <p>Please fill the form carefully. All fields must be filled.</p>
+    <form action="">
+
+        <!-- name -->
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required><br><br>
+
+        <!-- father name -->
+
+        <label for="fathername">Father's Name:</label>
+        <input type="text" id="fathername" name="fathername" placeholder="Enter your father's name" required><br><br>
+
+        <!-- email -->
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com" required><br><br>
+
+        <!-- password -->
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" 
+        required maxlength="10"><br><br>
+
+        <!-- phone number -->
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="03XX-XXXXXXX" required><br><br>
+
+        <!-- CNIC -->
+
+        <label for="CNIC">CNIC:</label>
+        <input type="text" id="CNIC" name="CNIC" placeholder="XXXXX-XXXXXXX-X" required maxlength="15"><br><br>
+
+        <!-- date of birth -->
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <!-- age -->
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="10" max="60" required><br><br>
+
+        <!-- gender -->
+
+        <label>Gender</label>
+        <input type="radio" name="gender" value="male" required> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other<br><br>
+
+        <!-- photo -->
+
+        <label for="photo">Upload Your Photo:</label>
+        <input type="file" id="photo" name="photo" required><br><br>
+
+        <!-- website -->
+
+        <label for="website">Portfolio Website:</label>
+        <input type="url" id="website" name="website" placeholder="https://example.com"><br><br>
+
+        <!-- course selection -->
+
+        <label>Select Course</label><br>
+        <input type="checkbox" name="course" value="html"> HTML <br>
+        <input type="checkbox" name="course" value="css"> CSS <br>
+        <input type="checkbox" name="course" value="javascript"> JavaScript <br>
+        <input type="checkbox" name="course" value="php"> PHP <br><br>
+
+        <!-- city -->
+
+        <label for="city">Select City:</label>
+        <select id="city" name="city" required>
+            <option value="" disabled selected>--Select City--</option>
+            <option value="karachi">Karachi</option>
+            <option value="lahore">Lahore</option>
+            <option value="islamabad">Islamabad</option>
+            <option value="peshawar">Peshawar</option>
+        </select><br><br>
+
+        <!-- address  -->
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" cols="30" placeholder="Enter your address here..." required></textarea><br><br>
+
+        <!-- institute -->
+
+        <label for="institute">Institute:</label>
+        <input type="text" id="institute" name="institute"  value="Ficohitech" readonly><br><br>
+
+        <!-- discount code -->
+
+        <label for="discount">Discount Code:</label>
+        <input type="text" id="discount" name="discount" value="Not Available" disabled><br><br>
+
+        <!-- submit and reset buttons -->
+         
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        
+    </form>
+</body>
+</html>
