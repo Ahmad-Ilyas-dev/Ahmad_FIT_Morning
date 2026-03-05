@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Website Layout</title>
+
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header{
+            background-color: lightgray;
+            padding: 20px;
+            height: 100px;
+            
+        }
+
+        header h1{
+            float: left;
+            
+        }
+
+        nav{
+            margin: 13px;
+        }
+
+        header nav a{
+            margin: 0 50px;
+            text-decoration: none;
+        }
+
+        .sidebar{
+            background-color: gray;
+            padding: 20px;
+            width: 200px;
+            height: 400px;
+            float: left;
+        } 
+
+        aside h2{
+            margin-left: 20px;
+        }
+        
+        aside ul{
+            list-style: none;
+            margin: 30px 0;
+            
+        }
+
+        aside ul li{
+            margin: 20px 30px;
+            
+        }
+        
+        aside ul li a{
+            text-decoration: none;
+        }
+
+        main h1, main p{
+            text-align: center;
+        }
+
+        
+        .hero{
+            background-color: lightblue;
+            padding: 20px;
+            height: 400px;
+        }
+
+        img{
+            width: 200px;
+            float: right;
+
+        }
+
+        .box{
+            width: 300px;
+            height: 195px;
+            background-color: lightcoral;
+            margin: 20px;
+            float: left;
+        }
+
+        .box1{
+            margin-top: 35px;
+            
+        }
+
+        .box2{
+            margin-top: 35px;
+        }
+
+
+        footer{
+            background-color: black;
+            color: white;
+            padding: 20px;
+            height: 99px;
+            clear: both;
+            text-align: center;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/">About</a>
+            <a href="/">Contact</a>
+        </nav>
+    </header>
+    <aside class="sidebar">
+        <h2>SideBar</h2>
+        <ul>
+            <li><a href="/">Link 1</a></li>
+            <li><a href="/">Link 2</a></li>
+            <li><a href="/">Link 3</a></li>
+        </ul>
+    </aside>
+    <main>
+        <section class="hero">
+            <h1>Main Content</h1>
+            <img src="assets/images/tree.jpeg" alt="a tree">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic sint ipsa eum ratione deleniti voluptatibus! Officiis repellendus illum eius! Corporis facere odio expedita voluptate assumenda ea inventore suscipit mollitia a.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, quas facilis? Tempore minima obcaecati fuga inventore autem repellendus commodi quia, qui accusantium soluta eligendi adipisci officia similique incidunt amet beatae?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, excepturi. Tenetur, ab autem expedita aspernatur animi laudantium eligendi dolorum fuga, explicabo assumenda sed tempora aut quam? Unde exercitationem voluptatibus facere.
+            </p>
+             <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+       
+        </section>
+
+    </main>
+    <footer>
+        <h2>Footer</h2>
+        <p> &copy; Copyright 2026</p>
+    </footer>
+</body>
+</html>

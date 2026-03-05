@@ -1,0 +1,19 @@
+
+
+    <!-- Flex: A CSS Module to create interactive web layouts -->
+     <!-- Flex is one dimensional (by-default use row) -->
+
+
+     <!-- parent flex -- flex  container -- some properties are for container -->
+     <!-- they dont use each other properties -- they use their own property-->
+     <!-- child flex -- flex items -- some for items -->
+
+     <!-- flex concept -->
+
+     <!-- by-default , flex follows -- main axis -->
+
+     <!-- if applied opposite -- cross axis -->
+
+     <!-- when item is alligned to cross axis -- if it found extra space -- it strecthes it self -->
+
+     <!-- justify content -- works on flex direction -->

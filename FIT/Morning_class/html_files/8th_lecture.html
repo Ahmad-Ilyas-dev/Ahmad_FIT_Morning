@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+            
+        }
+        .box {
+            width: 300px;
+            height: 300px;
+            background-color: lightblue;
+            margin: 20px;
+            padding: 10px;
+            border: 5px solid blue;
+            display: inline-block;
+            box-sizing: border-box;
+            /* border-radius: 10000px; */
+        }
+        
+        .text-box {
+        
+            margin: 20px;
+            width: 500px;
+            height: 200px;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: lightskyblue;
+            display: inline-block;
+        }
+        p{
+            margin-top: 10px;
+        }
+        button{
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 50px;
+        }
+        button:hover {
+            background-color: black;
+            
+        }
+        .img-box {
+            
+            margin: 0px;
+            display: inline-block;
+            
+        }
+        img {
+            width: 400px;
+            height: 200px;
+        }
+
+        audio {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+        }
+
+        audio::-webkit-media-controls-panel {
+            background-color: aqua;
+        }
+
+        audio::-webkit-media-controls-play-button {
+            background-color: blue;
+            border-radius: 50%;
+        }
+
+        audio::after{
+            content: hidden;
+        }
+
+        video {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>Box Model</h1>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+    <section>
+
+        <div class="text-box">
+            <h2>Text Content</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi laudantium culpa doloribus error iusto provident? Quos numquam sed esse, sit voluptatibus eligendi minus. Sit sint earum eius mollitia ipsa perspiciatis.</p>
+            <button>Get more info.</button>
+        </div>
+        <div class="img-box">
+            <img src="data:image/jpeg;base64,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" alt="no image">
+        </div>
+
+    </section>
+
+    <audio controls>
+        <source src="audios/tu-kuja-mann-kuja.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+
+    <video controls>
+        <source src="videos/14035-254146872_small.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+
+</body>
+</html>

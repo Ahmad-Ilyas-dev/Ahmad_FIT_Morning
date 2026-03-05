@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Walking Bone Dragon Cursor</title>
+<style>
+body{
+    margin:0;
+    background:black;
+    overflow:hidden;
+    cursor:none;
+}
+
+.segment{
+    position:absolute;
+    width:40px;
+    height:12px;
+    background:white;
+    border-radius:20px;
+    transform-origin:left center;
+    pointer-events:none;
+    box-shadow:0 0 8px white,
+               0 0 15px white;
+}
+
+/* Legs */
+.leg{
+    position:absolute;
+    width:6px;
+    height:12px;
+    background:white;
+    border-radius:3px;
+    transform-origin:top center;
+    pointer-events:none;
+    box-shadow:0 0 6px white,
+               0 0 10px white;
+}
+</style>
+</head>
+<body>
+
+<script>
+const segmentCount = 20;
+const segmentLength = 18;
+
+let segments = [];
+let mouse = {x: window.innerWidth/2, y: window.innerHeight/2};
+
+// Create body segments with legs
+for(let i=0;i<segmentCount;i++){
+    let div = document.createElement("div");
+    div.className="segment";
+    document.body.appendChild(div);
+
+    // Create two legs per segment
+    let legLeft = document.createElement("div");
+    legLeft.className = "leg";
+    document.body.appendChild(legLeft);
+
+    let legRight = document.createElement("div");
+    legRight.className = "leg";
+    document.body.appendChild(legRight);
+
+    segments.push({
+        el: div,
+        x: mouse.x,
+        y: mouse.y,
+        angle: 0,
+        legs: [legLeft, legRight],
+        legOffset: Math.random()*Math.PI*2 // randomize leg movement
+    });
+}
+
+document.addEventListener("mousemove", e=>{
+    mouse.x = e.clientX;
+    mouse.y = e.clientY;
+});
+
+let time = 0;
+function animate(){
+    time += 0.1;
+
+    // Head follows mouse
+    let head = segments[0];
+    let dx = mouse.x - head.x;
+    let dy = mouse.y - head.y;
+
+    head.angle = Math.atan2(dy, dx);
+    head.x += dx * 0.25;
+    head.y += dy * 0.25;
+
+    head.el.style.left = head.x + "px";
+    head.el.style.top = head.y + "px";
+    head.el.style.transform = `rotate(${head.angle}rad)`;
+
+    // Body follows head
+    for(let i=1;i<segments.length;i++){
+        let prev = segments[i-1];
+        let seg = segments[i];
+
+        let dx = prev.x - seg.x;
+        let dy = prev.y - seg.y;
+
+        seg.angle = Math.atan2(dy, dx);
+
+        seg.x = prev.x - Math.cos(seg.angle) * segmentLength;
+        seg.y = prev.y - Math.sin(seg.angle) * segmentLength;
+
+        seg.el.style.left = seg.x + "px";
+        seg.el.style.top = seg.y + "px";
+        seg.el.style.transform = `rotate(${seg.angle}rad)`;
+
+        // Animate legs like walking
+        let legSwing = Math.sin(time + seg.legOffset) * 0.5;
+        let [left, right] = seg.legs;
+
+        left.style.left = seg.x + "px";
+        left.style.top = seg.y + "px";
+        left.style.transform = `rotate(${seg.angle + legSwing}rad) translateY(8px)`;
+
+        right.style.left = seg.x + "px";
+        right.style.top = seg.y + "px";
+        right.style.transform = `rotate(${seg.angle - legSwing}rad) translateY(8px)`;
+    }
+
+    requestAnimationFrame(animate);
+}
+
+animate();
+</script>
+
+</body>
+</html>
