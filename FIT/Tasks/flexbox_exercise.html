@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header{
+            width: 100%;
+            height: 100px;
+            background-color: teal;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        header h1{
+            color: black;
+            font-size: 30px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        header nav{
+            display: flex;
+            align-items: center;
+        }
+
+        nav a{
+            color: black;
+            text-decoration: none;
+            font-size: 20px;
+            margin-right: 20px;
+        }
+
+        .main_linker a:hover{
+            text-decoration: wavy underline black;
+            font-style: italic;
+        }
+
+        .hero{
+            display: flex;
+            justify-content: space-between;
+            background-color: lightgreen;
+            padding: 20px;
+        }
+
+        .left_box{
+            width: 50%;
+            padding: 20px;
+        }
+
+        .left_box h1{
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        .left_box p{
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .left_box button{
+            padding: 10px 20px;
+            font-size: 20px;
+            background-color: teal;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: .7s;
+        }
+
+        button:hover{
+            background-color: black;
+        }
+
+        .right_box img{
+            margin-top: 20px;
+            width: 100%;
+            
+        }
+
+        .services{
+            display: flex;
+            justify-content: space-around;
+            gap: 5%;
+        }
+
+        .ser{
+            margin-top: 20px;
+            height: 200px;
+            background-color: lightblue;
+            border: 2px black solid;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .ser h2{
+            font-size: 30px;
+            margin-top: 10px;
+        }
+
+        .ser p{
+            font-size: 15px;
+            padding: 10px;
+        }
+
+        .main-ser{
+            background-color: lightpink;
+        }
+
+        .main-ser h1{
+            text-align: center;
+            font-size: 40px;
+            gap: 10px;
+        }
+
+        .main-team{
+            background-color: lawngreen;
+        }
+
+        .main-team h1{
+                text-align: center;
+                font-size: 40px;
+                gap: 10px;
+        }
+
+        .team{
+            display: flex;
+            justify-content: space-around;
+            gap: 5%;
+        }
+
+        .team-mem{
+            margin-top: 20px;
+            height: 300px;
+            border: 2px solid black;
+            background-color: #ffffff;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .team-mem h3{
+            margin: 10px;
+        }
+
+        .team-mem img{
+            width: 90%;
+            height: 200px;
+        }
+
+        .team-mem h4{
+            margin: 10px;
+        }
+
+        footer{
+            width: 100%;
+            height: 100px;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        footer h1{
+            font-size: 30px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        footer nav{
+            display: flex;
+            align-items: center;
+        }
+
+        footer nav a{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            margin-right: 20px;
+        }
+
+        footer nav a:hover{
+            text-decoration: wavy underline white;
+            font-style: italic;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <h1>Flex Box</h1>
+        <nav class="main_linker">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="left_box">
+                <h1>Left side of Hero Section</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam accusamus voluptatibus aliquid optio, dicta sequi quae cumque assumenda illo dolorem magni deserunt, reiciendis accusantium quidem, odio dolor alias asperiores ad.</p>
+                <button>Get More Info</button>
+            </div>
+            <div class="right_box">
+                <img src="../Morning_class/assets/images/tree.jpeg" alt="">
+            </div>
+        </section>
+
+
+
+        <section class="main-ser">
+            <h1>Our Services</h1>
+            <div class="services">
+            <div class="ser">
+                <h2>Service 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus fugiat provident natus omnis a quam qui aut. Provident dolorum, iure doloribus quas dicta odit vel, ad aspernatur, quam ipsam fuga!</p>
+            </div>
+            <div class="ser">
+                <h2>Service 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus fugiat provident natus omnis a quam qui aut. Provident dolorum, iure doloribus quas dicta odit vel, ad aspernatur, quam ipsam fuga!</p>
+            </div>
+            <div class="ser">
+                <h2>Service 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus fugiat provident natus omnis a quam qui aut. Provident dolorum, iure doloribus quas dicta odit vel, ad aspernatur, quam ipsam fuga!</p>
+            </div>
+            <div class="ser">
+                <h2>Service 4</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus fugiat provident natus omnis a quam qui aut. Provident dolorum, iure doloribus quas dicta odit vel, ad aspernatur, quam ipsam fuga!</p>
+            </div>
+           </div>
+        </section>
+
+
+
+        <section class="main-team">
+            <h1>Our Members</h1>
+            <div class="team">
+                <div class="team-mem">
+                    <h3>John Doe</h3>
+                    <img src="../Morning_class/assets/images/member1.jpeg" alt="">
+                    <h4>Web Developer</h4>
+                </div>
+                <div class="team-mem">
+                    <h3>James Smith</h3>
+                    <img src="../Morning_class/assets/images/member2.jpeg" alt="">
+                    <h4>Graphic Designer</h4>
+                </div>
+                <div class="team-mem">
+                    <h3>Aliana Johnson</h3>
+                    <img src="../Morning_class/assets/images/member3.jpeg" alt="">
+                    <h4>Project Manager</h4>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <h1>Flex Box</h1>
+
+        <nav>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Contact Us</a>
+        </nav>
+
+    </footer>
+
+</body>
+</html>

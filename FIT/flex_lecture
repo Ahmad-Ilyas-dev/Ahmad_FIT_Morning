@@ -16,4 +16,16 @@
 
      <!-- when item is alligned to cross axis -- if it found extra space -- it strecthes it self -->
 
-     <!-- justify content -- works on flex direction -->
+     <!-- justify content align item in center horizontaly -- works on flex direction(main axis) -->
+
+     <!-- align item in center 'vertically' ---- it works on flex direction(cross axis) -->
+
+     <!-- default value of cross axis -- strecth -->
+
+     <!--flex-wrap -- for making multiple lines along main axis (by default single line)-->
+
+     <!-- align-content -- make alignments on flex items on cross axis-->
+
+     <!-- flex-basis -- used in child -- main axis vertical = width , -- main axis horizontal = heigth-->
+
+

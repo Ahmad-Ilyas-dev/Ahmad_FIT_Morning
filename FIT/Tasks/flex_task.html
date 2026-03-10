@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Task</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            width: 100%;
+            height: 100px;
+            padding: 0 10px ;
+            background-color: bisque;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        header h1{
+            font-size: 40px;
+            margin-top: 25px;
+        }
+
+        header nav{
+            display: flex;
+            align-items: center;
+        }
+        header nav a{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+        aside{
+            width: 25%;
+            height: 400px;
+            background-color: lightgray;
+            float: left;
+        }
+
+        aside h2{
+            font-size: 30px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        aside ul{
+            list-style: none;
+            padding: 20px;
+        }
+
+        aside ul li {
+            text-decoration: none;
+            border: 1px solid black;
+            text-align: center;
+            color: black;
+            font-size: 18px;
+            display: block;
+            padding: 10px 0;
+        }
+
+        li:hover{
+            background-color: black;
+            color: white;
+        }
+
+        main{
+            width: 75%;
+            height: 400px;
+            background-color: brown;
+            float: left;
+        }
+
+        .hero h2,p{
+         text-align: center;
+
+        }
+
+        .content{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        
+        .content div {
+            width: 30%;
+            height: 180px;
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            font-size: 20px;
+        }
+
+        .content div img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .content h5{
+            position: absolute;
+            top: 195px;
+            left: 625px;
+            background-color: red;
+            color: white;
+            padding: 5px 10px;
+            font-size: 14px;
+        }
+
+        .button{
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+           
+        }
+
+        .button button{
+            width: 100px;
+            height: 40px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: aqua;
+            color: black;
+            
+        }
+
+
+        
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Flex</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <aside>
+        <h2>Sidebar</h2>
+        <ul>
+            <li>Link 1</li>
+            <li>Link 2</li>
+            <li>Link 3</li>
+            <li>Link 4</li>
+        </ul>
+    </aside>
+    <main>
+        <section class="hero">
+            <h2>Main Content</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </section>
+        <section class="content">
+            <div>
+                <h5>New</h5>
+                <img src="../Morning_class/assets/images/wallpaperflare.com_wallpaper (2).jpg" alt="">
+            </div>
+            <div>
+                <img src="../Morning_class/assets/images/tree.jpeg" alt="">
+            </div>
+            <div>
+                <img src="../Morning_class/assets/images/tree.jpeg" alt=""> 
+           </div>
+        </section>
+        <section class="button">
+            <button>Button 1</button>
+            <button>Button 2</button>
+            <button>Button 3</button>
+        </section>
+    </main>
+</body>
+</html>
