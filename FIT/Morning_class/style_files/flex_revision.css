@@ -1,0 +1,99 @@
+.container{
+    width: 100%;
+    height: 500px;
+    border: 2px red solid;
+    gap: 0px 10px;
+
+    display: flex;
+
+    /* 
+        ye website ki layout k leye kaam karti hai
+        ye items ki allignment main kaam ati hai
+    */
+
+    flex-direction: row;
+
+    /* 
+        ye flex ki direction change karti hai
+        by default jo direction set hoo rhi hoti hai usko main axis kahte hai
+        jo is k opposite ho ga is ko cross axis kahte hai
+    */
+
+    /* flex-wrap: wrap; */
+
+    /* 
+        ye multiple lines banane k leye use hoti hai
+        by default ye single line pe set hoti hai
+    */
+
+    justify-content: center;
+
+    /* 
+        ye items ko main axis pe center main lata hai
+    */
+
+    align-items: center;
+
+    /* 
+        ye items ko cross axis ke through center pe lata hai
+    */
+
+    /* flex-flow: row wrap; */
+
+    /* 
+        ye short hand property hai
+        ye aik sath flex direction aur flex wrap ko set karti hai
+    */
+
+    /* align-content: center; */
+
+    /* 
+        ye lines ki allignment karta hai cross axis pe
+    */
+
+    
+
+}
+
+.container div{
+    /* width: 120px; */
+    height: 100px;
+    background-color: blueviolet;
+    flex-basis: 100px;
+
+    /* 
+        ye item ka size set karta hai main axis k according
+        agar main axis row hai to width set kare ga
+        agar main axis coloumn haik tu heigth set kare ga
+    */
+
+}
+
+.con4 , .con8{
+    flex-grow: 1;
+    /* 
+        ye item ka size increase karta hai main axis ka according
+        ye extra space ko use karta hoa items ka size increase karta hai
+    */
+}
+
+.con1{
+    align-self: flex-start;
+
+    /* 
+        ye individual item ki allignment karta hai
+
+    */
+}
+
+
+.con5{
+    order: 3;
+    /* 
+        ye items ka order change karta hai webpage pe
+    */
+}
+
+.con6{
+    order: 2;
+}

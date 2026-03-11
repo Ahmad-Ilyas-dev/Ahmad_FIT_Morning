@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards Layout</title>
+
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .row1 , .row2{
+            display: flex;
+            justify-content: center;
+            margin: 10px;
+
+        }
+
+        .card1,.card2,.card3,.card4,.card5,.card6{
+            gap: 10px 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 2px red solid;
+            margin: 10px;
+            height: 500px;
+        }
+
+        img{
+            width: 300px;
+            height: 200px;
+            margin: 10px;
+        }
+
+        p{
+            width: 300px;
+            margin: 10px;
+        }
+
+        button{
+            border: none;
+            background-color: burlywood;
+            width: 100px;
+            height: 30px;
+            padding: 5px;
+            cursor: pointer;
+            transition: .6s;
+        }
+
+        button:hover{
+            background-color: chartreuse;
+            color: white;
+            border: 2px black solid;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="row1">
+        <div class="card1">
+            <img src="../assets/images/house2.jpeg" alt="">
+            <h1>Image of house</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis quibusdam, rem, nihil dignissimos sint sunt aspernatur iusto consectetur expedita quaerat odio placeat mollitia necessitatibus quos rerum quas debitis neque laboriosam?</p>
+            <button class="btn">Get More Info</button>
+        </div>
+        <div class="card2">
+             <img src="../assets/images/house2.jpeg" alt="">
+            <h1>Image of house</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis quibusdam, rem, nihil dignissimos sint sunt aspernatur iusto consectetur expedita quaerat odio placeat mollitia necessitatibus quos rerum quas debitis neque laboriosam?</p>
+                        <button class="btn">Get More Info</button>
+
+        </div>
+        <div class="card3">
+             <img src="../assets/images/house2.jpeg" alt="">
+            <h1>Image of house</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis quibusdam, rem, nihil dignissimos sint sunt aspernatur iusto consectetur expedita quaerat odio placeat mollitia necessitatibus quos rerum quas debitis neque laboriosam?</p>
+                        <button class="btn">Get More Info</button>
+
+        </div>
+    </div>
+    <div class="row2">
+         <div class="card4">
+            <img src="../assets/images/house2.jpeg" alt="">
+            <h1>Image of house</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis quibusdam, rem, nihil dignissimos sint sunt aspernatur iusto consectetur expedita quaerat odio placeat mollitia necessitatibus quos rerum quas debitis neque laboriosam?</p>
+                        <button class="btn">Get More Info</button>
+
+        </div>
+        <div class="card5">
+             <img src="../assets/images/house2.jpeg" alt="">
+            <h1>Image of house</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis quibusdam, rem, nihil dignissimos sint sunt aspernatur iusto consectetur expedita quaerat odio placeat mollitia necessitatibus quos rerum quas debitis neque laboriosam?</p>
+                        <button class="btn">Get More Info</button>
+
+        </div>
+        <div class="card6">
+             <img src="../assets/images/house2.jpeg" alt="">
+            <h1>Image of house</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis quibusdam, rem, nihil dignissimos sint sunt aspernatur iusto consectetur expedita quaerat odio placeat mollitia necessitatibus quos rerum quas debitis neque laboriosam?</p>
+                        <button class="btn">Get More Info</button>
+
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+    
+</body>
+</html>

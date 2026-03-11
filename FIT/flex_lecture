@@ -1,7 +1,7 @@
 
 
-    <!-- Flex: A CSS Module to create interactive web layouts -->
-     <!-- Flex is one dimensional (by-default use row) -->
+     <!-- flex: A CSS Module to create interactive web layouts -->
+     <!-- flex is one dimensional (by-default use row) -->
 
 
      <!-- parent flex -- flex  container -- some properties are for container -->
@@ -22,10 +22,36 @@
 
      <!-- default value of cross axis -- strecth -->
 
-     <!--flex-wrap -- for making multiple lines along main axis (by default single line)-->
+     <!-- flex-wrap -- for making multiple lines along main axis (by default single line)-->
 
      <!-- align-content -- make alignments on flex items on cross axis-->
 
      <!-- flex-basis -- used in child -- main axis vertical = width , -- main axis horizontal = heigth-->
+
+     <!-- align-self -- self allignment of an indivisual item along cross axis -->
+
+     <!-- flex-flow -- two things -1) direction -2)lines (single , multiple)-->
+
+     <!-- flex-flow -- short hand property like border-->
+
+     <!-- flex-flow -- combination of (flex-directon)&(flex-wrap)-->
+
+     <!-- flex-grow -- by default -- disabled("0") -- does not grow any item-->
+
+     <!-- flex-grow -- add extra space in  main size-->
+
+     <!-- flex-grow -- applies on items-->
+
+     <!-- flex-grow -- depends on extra space on container size --main size does not change -->
+
+     <!-- flex-shrink -- it shrinks the size of item -- by defaultits value is 1 -->
+
+     <!-- flex -- short hand property -- uses 1)grow 2)shrink 3)flex-basis -->
+
+---------------------------------------------------------------------------------------------------------
+
+     <!-- Order -->
+
+    <!-- changes the order of items -->   
 
 
