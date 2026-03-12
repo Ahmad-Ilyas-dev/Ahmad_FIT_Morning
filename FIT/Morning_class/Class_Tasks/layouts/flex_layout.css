@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+        --dark:    #0f1117;
+        --accent:  #e8a045;
+        --light:   #f5f0e8;
+        --mid:     #2a2d38;
+        --muted:   #8a8fa8;
+        --white:   #ffffff;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    background-color: var(--dark);
+    height: 80px;
+    padding: 7px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+}
+
+.north{
+    color: var(--accent);
+}
+
+.nav-links{
+    display: flex;
+    gap: 0 15px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: var(--muted);
+    font-size: 20px;
+}
+
+.nav-btn{
+    text-decoration: none;
+    background-color: var(--accent);
+    color: var(--dark);
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.hero{
+    background-color: var(--mid);
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    padding: 20px;
+
+}
+
+.hero-h3{
+    color: var(--muted);
+    margin-bottom: 30px;
+}
+
+
+.main-cards{
+    display: flex;
+    gap: 0 20px;
+}
+
+.card{
+    width: 500px;
+    height: 220px;
+    background-color: #333744;
+    border-top: 3px var(--accent) solid;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px 0px;
+    padding: 20px;
+}
+
+.emoji{
+    font-size: 30px;
+}
+
+.card-title{
+    color: var(--white);
+}
+
+.card-para{
+    color: #5a6175;
+}

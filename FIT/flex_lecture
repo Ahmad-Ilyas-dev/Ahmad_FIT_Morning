@@ -20,17 +20,19 @@
 
      <!-- align item in center 'vertically' ---- it works on flex direction(cross axis) -->
 
+     <!-- align items -- by default -- strecth -->
+
      <!-- default value of cross axis -- strecth -->
 
      <!-- flex-wrap -- for making multiple lines along main axis (by default single line)-->
 
-     <!-- align-content -- make alignments on flex items on cross axis-->
+     <!-- align-content -- make alignments of lines on cross axis-->
 
      <!-- flex-basis -- used in child -- main axis vertical = width , -- main axis horizontal = heigth-->
 
      <!-- align-self -- self allignment of an indivisual item along cross axis -->
 
-     <!-- flex-flow -- two things -1) direction -2)lines (single , multiple)-->
+     <!-- flex-flow -- two things -1) direction -2)wrap (single , multiple)-->
 
      <!-- flex-flow -- short hand property like border-->
 
@@ -48,10 +50,8 @@
 
      <!-- flex -- short hand property -- uses 1)grow 2)shrink 3)flex-basis -->
 
----------------------------------------------------------------------------------------------------------
 
      <!-- Order -->
 
-    <!-- changes the order of items -->   
-
+     <!-- changes the order of items -->   
 
