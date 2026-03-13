@@ -1,0 +1,35 @@
+
+
+    <!-- Grid also contains parent and multiple childs -->
+
+    <!-- display:grid -- no effects on items -- unless rows and coloumns are defined -->
+
+    <!-- grid-template-coloumns: auto auto -- automatic creates two coloumn with auto space (width)-->
+
+    <!-- in grid gap is applied on both rows and coloumns -->
+
+    <!-- grid-template-rows: 150px 100px 150px -- make three rows with applied spacing (heigth)-->
+
+    <!-- 1fr , 1fr -- unit equally divides container into two equall parts -->
+
+    <!-- 1fr , 2fr , 1fr -- means the 2nd item will aquire double width than 1st and 2nd -->
+
+    <!-- fr -- effcient for grid as compared to other units -->
+
+    <!-- fr -- changes its width or heigth according to container -->
+
+    <!-- items in the parent div makes grid -->
+
+    <!-- justify content -- for horizontal allignment -->
+
+    <!-- align content -- for vertical allignment -->
+
+    <!-- align item -- does not exist in grid -->
+
+    <!-- grid-coloumn/grid-row -- used for item -->
+
+    <!-- grid-col./grid-row -- short hand property -->
+
+    <!-- grid-coloumn: 1 / 3 -- starts from 1 coloumn line / ends at 3 coloumn line-->
+
+    <!-- grid-row: 1 / 3 -- starts from 1 row line / ends at 3 row line -->
