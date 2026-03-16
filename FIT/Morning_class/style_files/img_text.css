@@ -44,3 +44,18 @@ button:hover{
     background-color: white;
     color: black;
 }
+
+@media(max-width:600px){
+    .img_text{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text_box{
+        order: 2;
+    }
+
+    .img_box{
+        order: 1;
+    }
+}

@@ -19,8 +19,8 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            flex-wrap: wrap;
-            align-content: space-around;
+            /* flex-wrap: wrap; */
+            /* align-content: space-around; */
             gap: 0 5px;
         }
 
@@ -29,17 +29,37 @@
             flex-basis: 300px;
         }
 
+        @media(max-width:600px){
+            body{
+                background-color: burlywood;
+                color: black;
+            }
+
+            .con{
+                display: flex;
+                flex-direction: column;
+                gap: 10px 0;
+            }
+
+            .con p{
+                flex-basis: 0;
+
+            }
+        }
+
+        
+
 
     </style>
 
 </head>
 <body>
     <div class="con">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptas repudiandae enim rem architecto placeat sunt sequi! Cumque cum, esse magni reprehenderit ut vitae culpa quae! Error autem fugiat molestiae.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptas repudiandae enim rem architecto placeat sunt sequi! Cumque cum, esse magni reprehenderit ut vitae culpa quae! Error autem fugiat molestiae.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptas repudiandae enim rem architecto placeat sunt sequi! Cumque cum, esse magni reprehenderit ut vitae culpa quae! Error autem fugiat molestiae.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptas repudiandae enim rem architecto placeat sunt sequi! Cumque cum, esse magni reprehenderit ut vitae culpa quae! Error autem fugiat molestiae.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptas repudiandae enim rem architecto placeat sunt sequi! Cumque cum, esse magni reprehenderit ut vitae culpa quae! Error autem fugiat molestiae.</p>
+        <p>Lorem ipsum dolor.</p>
+        <p>Lorem ipsum dolor.</p>
+        <p>Lorem ipsum dolor.</p>
+        <p>Lorem ipsum dolor.</p>
+        <p>Lorem ipsum dolor.</p>
     </div>
 </body>
 </html>

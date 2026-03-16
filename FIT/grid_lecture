@@ -6,6 +6,8 @@
 
     <!-- grid-template-coloumns: auto auto -- automatic creates two coloumn with auto space (width)-->
 
+    <!-- grid-template-coloumns: repeat(3,1fr) -- makes 3 col. with 1fr space -->
+
     <!-- in grid gap is applied on both rows and coloumns -->
 
     <!-- grid-template-rows: 150px 100px 150px -- make three rows with applied spacing (heigth)-->
@@ -26,6 +28,10 @@
 
     <!-- align item -- does not exist in grid -->
 
+    <!-- justify-item -- align items in its cell horizontally -->
+
+    <!-- align-items -- align items in its cell vertically -->
+
     <!-- grid-coloumn/grid-row -- used for item -->
 
     <!-- grid-col./grid-row -- short hand property -->
@@ -33,3 +39,4 @@
     <!-- grid-coloumn: 1 / 3 -- starts from 1 coloumn line / ends at 3 coloumn line-->
 
     <!-- grid-row: 1 / 3 -- starts from 1 row line / ends at 3 row line -->
+

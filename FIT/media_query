@@ -1,0 +1,16 @@
+
+    <!-- applied in the last of css -->
+
+    <!-- @media(condition) -->
+
+    <!-- from big screen to small screen -->
+
+    <!-- laptop first approach -->
+
+    <!-- @media(max-width:700px) -- apply styling when screen width reaches 700 or small -->
+
+    <!-- from small screen to big screen -->
+
+    <!-- mobile first approach -->
+
+    <!-- @media(min-width:700px) -- apply styling when screen width reaches 700 or big -->
