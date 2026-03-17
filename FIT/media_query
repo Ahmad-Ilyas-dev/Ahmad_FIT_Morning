@@ -14,3 +14,5 @@
     <!-- mobile first approach -->
 
     <!-- @media(min-width:700px) -- apply styling when screen width reaches 700 or big -->
+
+    <!-- !important -- to apply changes on same breakpoints -->

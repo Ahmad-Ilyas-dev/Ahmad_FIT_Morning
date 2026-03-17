@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header , footer{
+            height: 100px;
+            background-color: skyblue;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            padding: 20px;
+        }
+
+        .hero{
+            background-color: lavender;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .hero .hero-con{
+            width: 350px;
+            height: 200px;
+            border: 2px solid white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        button{
+            background-color: #9FE2BF;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: .5s;
+        }
+
+        button:hover{
+            background-color: #7ad6a7;
+            box-shadow: 0 10px 16px 0 rgba(0,0,0,0.4);
+        }
+
+        .hero-img{
+            width: 350px;
+
+        }
+
+        .hero-img img{
+            width: 100%;
+        }
+
+        .services{
+            background-color: antiquewhite;
+            text-align: center;
+        }
+
+        .cards{
+            display: grid;
+            grid-template-columns: repeat(3 , 1fr);
+            gap: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .cards div{
+            border: 1px solid black;
+            height: 100px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+        @media(max-width:992px){
+
+            header{
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+                height: 150px;
+            }
+
+            .hero{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .hero-con{
+                order: 2;
+            }
+
+            .hero-img{
+                order: 1;
+            }
+
+            .cards{
+                grid-template-columns: repeat(2 , 1fr);
+            }
+
+            footer{
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+                height: 150px;
+            }
+        }
+
+        @media(max-width:600px){
+            header nav{
+                display: flex;
+                flex-direction: column;
+            }
+
+            footer nav{
+                display: flex;
+                flex-direction: column;
+            }
+
+            header nav a{
+                padding: 5px;
+            }
+            
+            footer nav a{
+                padding: 5px;
+            }
+
+            .cards{
+                grid-template-columns: repeat(1 , 1fr);
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <header>
+
+        <h1>Responsive</h1>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="hero-con">
+            <h1>Responsive main</h1>
+            <p>Para of the main body</p>
+            <button>Get Details</button>
+            </div>
+            <div class="hero-img">
+                <img src="../Morning_class/assets/images/adventure.webp" alt="">
+            </div>
+        </section>
+
+        <section class="services">
+            <h1>Services</h1>
+            <div class="cards">
+                <div class="card1">
+                    <h3>Ahmad</h3>
+                    <p>Web Developer from FIT</p>
+                </div>
+                <div class="card2">
+                    <h3>Hussnain</h3>
+                    <p>Web Developer from FIT</p>
+                </div>
+                <div class="card3">
+                    <h3>Anas</h3>
+                    <p>Graphic Designer from FIT</p>
+                </div>
+                <div class="card4">
+                    <h3>Aoun</h3>
+                    <p>Graphic Designer from FIT</p>
+                </div>
+                <div class="card5">
+                    <h3>Ali</h3>
+                    <p>SEO from FIT</p>
+                </div>
+                <div class="card6">
+                    <h3>Hamza</h3>
+                    <p>SEO from FIT</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+         <h1>Responsive</h1>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </footer>
+
+</body>
+</html>
