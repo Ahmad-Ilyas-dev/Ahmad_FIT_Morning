@@ -8,20 +8,20 @@
 <style>
 
 body{
-    background-color: rgb(221, 230, 230);
+    background-color: #dde6e6;
     color: white;
 }
 
 .container{
     display: grid;
-    grid-template-columns: 200px 1fr 200px;
-    grid-template-rows: 80px auto 80px;
+    grid-template-columns: 150px 1fr 150px;
+    grid-template-rows: 75px auto 75px;
     gap: 10px;
 
     grid-template-areas:
-        "header header header"
-        "sidebar main aside"
-        "footer footer footer";
+        'header header header'
+        'sidebar main aside'
+        'footer footer footer';
 }
 
 header{
@@ -65,8 +65,8 @@ main{
 
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
-        "featured featured featured"
-        "a b c";
+        'featured featured featured'
+        'a b c';
 }
 
 .hero div{

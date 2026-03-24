@@ -26,8 +26,6 @@
 
     <!-- align content -- for vertical allignment -->
 
-    <!-- align item -- does not exist in grid -->
-
     <!-- justify-item -- align items in its cell horizontally -->
 
     <!-- align-items -- align items in its cell vertically -->
@@ -54,8 +52,10 @@
 
     <!-- if we want to expand an item it should be expand in exact col. -->
 
-    <!-- e.g. 'item2 item3 item4' 
-              'item5 item3 item6' -->
+    <!-- e.g. 'item2 item3 item4' -- make 1st row with 3 col.
+              'item5 item3 item6' -- make 2nd row with 3 col. -->
 
     <!-- grid-area -- items are used in this which are defined in the grid-template-area -->
+
+    <!-- grid-area -- make an area inside template then used with different names -->
 
