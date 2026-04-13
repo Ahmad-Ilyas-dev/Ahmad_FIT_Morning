@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Calculator</title>
+    <style>
+        @keyframes slideDown {
+            0% { transform: translateY(-100%); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+        .animate-pop { animation: slideDown 0.4s ease-out; }
+        
+        .btn-hover:hover {
+            background-color: #24272c;
+            color: #ffffff;
+            box-shadow: -2px -2px 8px rgba(255,255,255,0.1), 2px 2px 8px rgba(0,0,0,0.8);
+        }
+    </style>
+</head>
+
+<body class="flex justify-center items-center min-h-screen bg-[#1b1d21] font-sans overflow-hidden">
+
+    <div id="toast" class="fixed top-5 hidden z-50 px-6 py-3 rounded-full bg-red-500 text-white font-medium shadow-lg animate-pop">
+        <span id="toast-msg"></span>
+    </div>
+
+    <div class="w-80 p-6 rounded-[28px] bg-[#1b1d21] shadow-[-8px_-8px_20px_rgba(255,255,255,0.05),8px_8px_20px_rgba(0,0,0,0.5)]">
+
+        <div class="flex flex-col justify-between w-full h-32 px-5 py-4 rounded-[18px] bg-[#1b1d21] shadow-[inset_-4px_-4px_10px_rgba(255,255,255,0.05),inset_4px_4px_10px_rgba(0,0,0,0.6)]">
+            <div id="operation" class="text-left text-cyan-400 text-lg h-8 overflow-hidden opacity-80 tracking-wide font-light"></div>
+            <div id="result" class="text-right text-gray-100 text-4xl font-bold overflow-hidden">0</div>
+        </div>
+
+        <div class="grid grid-cols-4 gap-3 mt-6">
+            <button class="btn btn-hover text-orange-500 font-bold" data-key="Escape">AC</button>
+            <button class="btn btn-hover text-orange-400 font-bold" data-key="Backspace">DEL</button>
+            <button class="btn btn-hover text-cyan-400" data-key="/">/</button>
+            <button class="btn btn-hover text-cyan-400" data-key="*">*</button>
+
+            <button class="btn btn-hover" data-key="7">7</button>
+            <button class="btn btn-hover" data-key="8">8</button>
+            <button class="btn btn-hover" data-key="9">9</button>
+            <button class="btn btn-hover text-cyan-400" data-key="-">-</button>
+
+            <button class="btn btn-hover" data-key="4">4</button>
+            <button class="btn btn-hover" data-key="5">5</button>
+            <button class="btn btn-hover" data-key="6">6</button>
+            <button class="btn btn-hover text-cyan-400" data-key="+">+</button>
+
+            <button class="btn btn-hover" data-key="1">1</button>
+            <button class="btn btn-hover" data-key="2">2</button>
+            <button class="btn btn-hover" data-key="3">3</button>
+            <button class="btn btn-hover h-full row-span-2 !bg-cyan-600 !text-white shadow-none active:bg-cyan-700" data-key="Enter">=</button>
+
+            <button class="btn btn-hover col-span-2" data-key="0">0</button>
+            <button class="btn btn-hover" data-key=".">.</button>
+        </div>
+    </div>
+
+    <script src="../script/calc.js"></script>
+</body>
+</html>

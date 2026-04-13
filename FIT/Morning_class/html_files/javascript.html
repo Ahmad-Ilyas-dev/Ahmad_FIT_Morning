@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+<body>
+<!--   
+     <h1 id="text"></h1>
+     <button onclick="changecolor()">Change Color</button>
+    <button id="btn_text">Get Text</button>
+    <button id="btn">Change Color</button> -->
+    
+
+
+    <!-- Calculator using html , tailwind and js -->
+    <!-- conatiner -->
+    <div class="min-h-screen bg-sky-300 flex justify-center items-center rounded-sm">
+        <!-- calculator card -->
+         <div class="bg-amber-300 px-2 py-3">
+            <h1 class="text-2xl font-bold mb-2">Calculator</h1>
+             <input type="number" id="num1" placeholder="Enter a number "
+                   class="border-2 border-red-600 p-1 rounded-md">
+            <input type="number" id="num2" placeholder="Enter another number"
+                    class="border-2 border-red-600 p-1 rounded-md">
+        <div class="grid grid-cols-4 gap-1 py-3">
+           
+             <!-- buttons for arithmetic operations -->
+             <button class="bg-blue-500 text-white p-2 rounded-sm" onclick="calculator('+')">+</button>
+             <button class="bg-blue-500 text-white p-2 rounded-sm" onclick="calculator('-')">-</button>
+             <button class="bg-blue-500 text-white p-2 rounded-sm" onclick="calculator('X')">X</button>
+             <button class="bg-blue-500 text-white p-2 rounded-sm" onclick="calculator('/')">/</button>
+            
+            <button class="bg-red-500 text-amber-50 p-2 rounded-sm col-span-4" onclick="clearvals()">Clear</button>
+
+        </div>
+        
+
+        <p class="bg-sky-300 font-semibold py-3 px-3 my-2 rounded-sm">Result:<span id="result"></span></p>
+
+        </div>
+        
+    </div>
+
+
+    <script src="../script/index.js"></script>
+</body>
+</html>

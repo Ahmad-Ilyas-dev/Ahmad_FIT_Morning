@@ -1,0 +1,17 @@
+// Js -> browser (console) console required to run js
+// js file does not run on broswer
+// html file is a bridge b/w js and browser used to run js on browser
+// our browser oly understand one language HTML
+// variables: a container used to store valur or data , A named memory location used to store data/values
+
+//           reserved word var_name = value
+// declaring a variable: let name = 'Haseeb'
+
+// js uses dom to intract with html
+
+
+parseInt() -> remove floating values
+
+parsefloat
+
+Number()  -> 
