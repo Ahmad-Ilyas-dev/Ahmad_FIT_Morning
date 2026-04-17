@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heading{
+    color: aqua;
+    background-color: blue;
+    font-size: 50px;
+} 
+
+.paragraph{
+    color: cadetblue;
+    background-color: bisque;
+    font-size: 20px; 
+} 
+ 
+.btn{
+    background-color: blue;
+    border: 1px black solid;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.navbar{
+    height: 80px;
+    margin-bottom: 100px;
+    background-color: #04365f;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.nav_title{
+    color: #caca27;
+    font: bold;
+    font-size: 30px;
+    padding: 5px;
+}
+
+.nav_links{
+    display: flex;
+    gap: 20px;
+    
+}
+
+.nav_links a{
+    color: black;
+    text-decoration: none;
+    padding-right: 5px;
+}
+
+.nav_btn{
+    text-decoration: none;
+    color: white;
+    background-color: #caca27;
+    border-radius: 20px;
+    padding: 10px 10px;
+}
